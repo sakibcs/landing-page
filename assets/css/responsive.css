@@ -1,0 +1,74 @@
+/*Extra small devices (portrait phones, less than 576px)
+		No media query since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.navbar-collapse .nav-link{
+		color: #fff;
+	}
+	.navbar-collapse .nav-link:hover{
+		color: #ddd;
+	}
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.slider-container{
+		padding-top: 200px;
+	}
+	#homeSlider .more{
+		margin-bottom: 6rem !important;
+	}
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1048px;
+	}
+}
+
+/*Alternative Direction*/
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+	.main-heading{
+	  font-size: 2.5rem;
+		text-align: center;
+	}
+	.main-sub-heading{
+		text-align: center;
+	}
+}
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767px) {
+	.navbar-collapse .nav-link{
+	  color: #5934A8;
+	}
+	.navbar .collapsing{
+	  background: #fff;
+	}
+	.navbar .show{
+	  background: #fff;
+	}
+	.navbar-collapse .dropdown-menu{
+	  background: #5934A8;
+	}
+}
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991px) {
+
+}
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199px) {
+
+}
+/*Extra large devices (large desktops)*/
+/*No media query since the extra-large breakpoint has no upper bound on its width*/
+
+
+/*Similarly, media queries may span multiple breakpoint widths*/
+@media (min-width: 768px) and (max-width: 1199px) {
+
+}

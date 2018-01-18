@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.flaticon{
+  font-family: Flaticon;
+  font-size: 6rem;
+  font-style: normal;
+}
+.flaticon-programming:before { content: "\f100"; }
+.flaticon-graphic-design:before { content: "\f101"; }
+.flaticon-support:before { content: "\f102"; }
