@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/slick.css">
   <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 
@@ -26,10 +27,10 @@
         <div class="row py-2">
           <div class="col-lg-6 text-center">
             <h5 class="d-inline-block f-15">Recent Updates: </h5>
-            <ul style="margin-bottom:-5px;" id="newsticker" class="d-inline-block list-unstyled">
-              <li class="f-12 ml-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-              <li class="f-12 ml-2">Fugit ea exercitationem quam, est.</li>
-              <li class="f-12 ml-2">Earum eaque maiores repellat ullam velit dolor</li>
+            <ul style="margin-bottom:-5px;" id="newsticker" class="d-inline-block list-unstyled text-sm-left">
+              <li class="f-12 ml-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+              <li class="f-12 ml-1">Fugit ea exercitationem quam, est vipsum dolor sit amet elit.</li>
+              <li class="f-12 ml-1">Earum eaque maiores repellat ullam velit dolor amet elit.</li>
             </ul>
           </div>
           <div class="col-lg-6 text-center text-lg-right">
@@ -231,10 +232,12 @@
       <div class="row justify-content-center mb-5">
         <h3 class="d-block text-center text-capitalize mt-5">gallery</h3>
       </div>
-      <div class="row justify-content-center mb-5">
-        <a class="category text-capitalize mr-3 c-dark" href="#">photo Gallery</a>
-        <a class="category text-capitalize ml-3 c-dark" href="#">video gallery</a>
-        <div class="container-fluid gallery-items mt-4">
+      <div id="tabs" class="row justify-content-center mb-5">
+        <ul>
+          <li><a class="category text-capitalize mr-3 c-dark" href="#tabs-1">photo Gallery</a></li>
+          <li><a class="category text-capitalize ml-3 c-dark" href="#tabs-2">video gallery</a></li>
+        </ul>
+        <div id="tabs-1" class="container-fluid gallery-items mt-4">
           <div class="row">
             <div class="col-10 mx-auto col-sm-6 col-lg-4 p-2">
               <img class="img-fluid" src="assets/img/pg-1.jpg" alt="Gallery Photo 1">
@@ -253,6 +256,28 @@
             </div>
             <div class="col-10 mx-auto col-sm-6 col-lg-4 p-2">
               <img class="img-fluid" src="assets/img/pg-6.jpg" alt="Gallery Photo 3">
+            </div>
+          </div>
+        </div>
+        <div id="tabs-2" class="container-fluid gallery-items mt-4">
+          <div class="row">
+            <div class="col-10 mx-auto col-sm-6 col-lg-4 p-2">
+              <img class="img-fluid" src="assets/img/pg-4.jpeg" alt="Gallery Photo 1">
+            </div>
+            <div class="col-10 mx-auto col-sm-6 col-lg-4 p-2">
+              <img class="img-fluid" src="assets/img/pg-5.jpg" alt="Gallery Photo 2">
+            </div>
+            <div class="col-10 mx-auto col-sm-6 col-lg-4 p-2">
+              <img class="img-fluid" src="assets/img/pg-6.jpg" alt="Gallery Photo 3">
+            </div>
+            <div class="col-10 mx-auto col-sm-6 col-lg-4 p-2">
+              <img class="img-fluid" src="assets/img/pg-1.jpg" alt="Gallery Photo 1">
+            </div>
+            <div class="col-10 mx-auto col-sm-6 col-lg-4 p-2">
+              <img class="img-fluid" src="assets/img/pg-2.jpg" alt="Gallery Photo 2">
+            </div>
+            <div class="col-10 mx-auto col-sm-6 col-lg-4 p-2">
+              <img class="img-fluid" src="assets/img/pg-3.jpg" alt="Gallery Photo 3">
             </div>
           </div>
         </div>
@@ -418,6 +443,7 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
   <script src="assets/js/jquery.newsTicker.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
   <script src="assets/js/custom.js"></script>
 </body>
 </html>

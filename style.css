@@ -257,6 +257,12 @@ body{
   text-decoration: none;
   border-bottom: 2px solid #5934A8;
 }
+.gallery .ui-tabs-active a,
+.gallery .ui-state-active a{
+  color: #5934A8;
+  text-decoration: none;
+  border-bottom: 2px solid #5934A8;
+}
 /**********************************
 ********** Counter Area **********
 **********************************/
