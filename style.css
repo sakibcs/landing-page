@@ -263,6 +263,39 @@ body{
   text-decoration: none;
   border-bottom: 2px solid #5934A8;
 }
+#tabs-1 a:hover{
+  cursor: zoom-in;
+}
+.gallery-link{
+  position: relative;
+  display: block;
+}
+.gallery-link .gallery-layer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 0;
+  height: 0;
+  background: rgba(89,52,168,0.7);
+  transition: all .4s ease;
+}
+.gallery-link .fas{
+  color: #fff;
+  display: none;
+}
+.gallery-link:hover .gallery-layer{
+  width: 100%;
+  height: 100%;
+  transition: all .4s ease;
+}
+.gallery-link:hover .fas{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: block;
+}
 /**********************************
 ********** Counter Area **********
 **********************************/
@@ -326,4 +359,10 @@ body{
   background-size: 100% 100%;
   background-position: left top;
   overflow: hidden;
+}
+/*********************************
+********** Modal Part **********
+*********************************/
+.modal-video-close-btn{
+  cursor: pointer;
 }

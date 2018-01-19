@@ -36,4 +36,9 @@ $(document).ready(function(){
     max_rows: 1,
 	});
 	$("#tabs").tabs();
+	$(".js-modal-btn").modalVideo({
+		youtube:{
+				controls:1,
+			}
+	});
 })
