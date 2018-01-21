@@ -8,7 +8,9 @@ $(document).ready(function(){
 		autoplaySpeed: 4000,
 		draggable: false,
 		pauseOnHover: false,
-		arrows: false,
+		arrows: true,
+		prevArrow: '<i class="arrows fas fa-caret-left fa-2x"></i>',
+		nextArrow: '<i class="arrows fas fa-caret-right fa-2x"></i>',
 		fade: true,
   	cssEase: 'linear'
 	});
@@ -39,6 +41,7 @@ $(document).ready(function(){
 	$(".js-modal-btn").modalVideo({
 		youtube:{
 				controls:1,
+				autoplay: 1,
 			}
 	});
 })

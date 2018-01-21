@@ -1,7 +1,6 @@
 /************************
 Template Name: SoftTech Responsive - Responsive Company Theme
 Author: Shahrukh Hasan
-Contact: sakibcs@gmail.com
 Facebook: http://www.facebook.com/rrsakibcs
 *************************/
 
@@ -86,9 +85,6 @@ li{
 .mt-7{
   margin-top: 7rem !important;
 }
-.mb-6{
-  margin-bottom: 6rem !important;
-}
 /******************************
 ************ Body ************
 ******************************/
@@ -122,6 +118,9 @@ body{
 .navbar-collapse .dropdown-menu{
   background: #5934A8;
 }
+.navbar-collapse .active{
+	color: #ddd !important;
+}
 .primary-overlay{
   background: rgba(89,52,168,0.8);
 }
@@ -149,6 +148,28 @@ body{
   background-size: 100% 100%;
   background-position: top right;
 }
+.slick-slide .video .layer-2{
+  padding: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.7);
+}
+.slick-slide .video .layer-1{
+  padding: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.8);
+}
+.slick-slide .video .fas{
+  padding: 20px 20px 20px 25px;
+  border-radius: 50%;
+  background: #fff;
+}
+.slick-slide .video a{
+  transition: all .1s ease;
+}
+.slick-slide .video a:hover{
+  transform: scale(1.1,1.1);
+  transition: all .1s ease;
+}
 .slick-slide .social a{
   width: 50px;
   height: 50px;
@@ -160,47 +181,34 @@ body{
 .slick-slide .social .fb:hover{
   background: #09488D;
 }
-.slick-slide .video{
-  position: relative;
+#homeSlider .arrows{
+  position:absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  color: rgba(255,255,255,0.5);
+  padding: 0 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: all .2s ease;
 }
-.slick-slide .video a{
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  width: 100px;
-  height: 100px;
-  background: rgba(255, 255, 255, 0.7);
-  transition: .1s;
+#homeSlider .arrows:hover{
+  color: rgba(255,255,255,1);
+  border-left-color: rgba(255,255,255,1);
+  border-right-color: rgba(255,255,255,1);
+  transition: all .2s ease;
+
 }
-.slick-slide .video .layer-2{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 80px;
-  height: 80px;
-  background: rgba(255, 255, 255, 0.8);
-  transition: .1s;
+#homeSlider .fa-caret-left{
+  left: 25px;
+  border-top: 8px solid transparent;
+  border-right: 10px solid rgba(255,255,255,0.5);
+  border-bottom: 8px solid transparent;
 }
-.slick-slide .video .layer-1{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 60px;
-  height: 60px;
-  background: rgba(255, 255, 255, 1);
-  transition: .1s;
-}
-.slick-slide .video a .fas{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.slick-slide .video a:hover{
-  transform: scale(1.1,1.1);
-  transition: .1s;
+#homeSlider .fa-caret-right{
+  right: 25px;
+  border-top: 8px solid transparent;
+  border-left: 10px solid rgba(255,255,255,0.5);
+  border-bottom: 8px solid transparent;
 }
 .bottom-extra{
   width: 0;
