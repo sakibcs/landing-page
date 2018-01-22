@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Our Pricing | SoftTech-IT</title>
+
+  <!-- Style Files -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/css/lightbox.min.css">
+  <link rel="stylesheet" href="assets/css/modal-video.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <style>
+    .card{
+      color: #2b3152;
+      transition: all .4s ease;
+      overflow: auto;
+    }
+    .card:hover{
+      transform: scale(1.1,1.1);
+      box-shadow: 5px 5px 5px #ccc;
+      transition: all .4s ease;
+    }
+    .price-box{
+      background: #2b3152;
+    }
+    .platinum .price-box{
+      background: rgba(89,52,168,1);
+      background: linear-gradient(to bottom, rgba(165,76,235,1), rgba(87,46,168,1));
+    }
+    .card hr {
+      color: #e5e5e5;
+      margin: 0;
+    }
+    .card a{
+      color: #fff;
+      text-decoration: none;
+      border-radius: 40px;
+    }
+    .silver a{
+      background: #2b3152;
+    }
+    .platinum a{
+      background: rgba(89,52,168,1);
+      background: linear-gradient(to bottom, rgba(165,76,235,1), rgba(87,46,168,1));
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Area -->
+  <header class="header-area">
+    <div class="header-top">
+      <div class="container">
+        <div class="row py-2">
+          <div class="col-lg-6 text-center">
+            <h5 class="d-inline-block f-15">Recent Updates: </h5>
+            <ul style="margin-bottom:-5px;" id="newsticker" class="d-inline-block list-unstyled text-sm-left">
+              <li class="f-12 ml-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+              <li class="f-12 ml-1">Fugit ea exercitationem quam, est vipsum dolor sit amet elit.</li>
+              <li class="f-12 ml-1">Earum eaque maiores repellat ullam velit dolor amet elit.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 text-center text-lg-right">
+            <P class="email d-inline-block f-14 mr-3"><i class="fas fa-envelope c-primary mr-2"></i>softtech-it336@gmail.com</P>
+            <p class="telephone d-inline-block f-14"><i class="fas fa-phone c-primary mr-2"></i>+8801793146509 , +8801758101611</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="default-overlay">
+        <div class="container">
+          <div class="row navigation-wrapper w-100">
+            <div class="col-12">
+              <nav class="navigation-menu navbar navbar-expand-lg w-100">
+                <a href="index.html" class="navbar-brand">
+                  <img src="assets/img/logo.png" alt="SoftTech-IT" width="140" height="40">
+                </a>
+                <button class="navbar-toggler bg-white" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="fas fa-bars c-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item">
+                        <a href="index.html" class="nav-link text-uppercase f-17">home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="about-us.html" class="nav-link text-uppercase f-17">about us</a>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="#courses" class="nav-link dropdown-toggle text-uppercase f-17" data-toggle="dropdown">our courses</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item text-capitalize" href="wp-online-course.html">WordPress Online</a>
+                      		<a class="dropdown-item text-capitalize" href="advanced-wp-dev.html">Advanced WordPress</a>
+                      	</div>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#seminar" class="nav-link text-uppercase f-17">free seminar</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="pricing.html" class="nav-link active text-uppercase f-17">our pricing</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="blog.html" class="nav-link text-uppercase f-17">blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="page-title text-center text-white py-4">
+            <h3 class="text-uppercase">pricing table</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header><!--./Header Area-->
+  <!-- Pricing Content -->
+  <section style="background:#eeeded;">
+    <div class="container">
+      <div class="row pt-5 justify-content-center">
+        <div class="col-10 col-sm-6 col-md-4 my-4 pb-2">
+          <div class="card silver">
+            <div class="card-body p-0 text-center">
+              <h5 class="text-uppercase text-center p-4">silver</h5>
+              <div class="price-box text-center text-white p-4">
+                <h5 class="price mb-2">$20.99</h5>
+                <p class="duration h5">Start Price/month</p>
+              </div>
+              <p class="h5 text-capitalize py-3">10 GB storage space</p><hr>
+              <p class="h5 text-capitalize py-2">50 GB bandwidth</p><hr>
+              <p class="h5 text-capitalize py-2">unlimited users</p><hr>
+              <p class="h5 text-capitalize py-2">no time tracking</p><hr>
+              <p class="h5 text-capitalize py-2">enhanced security</p><hr>
+              <a class="d-inline-block h5 font-weight-bold text-capitalize my-2 py-3 px-5" href="#">buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-sm-6 col-md-4 my-4 pb-2">
+          <div class="card platinum">
+            <div class="card-body p-0 text-center">
+              <h5 class="text-uppercase text-center p-4">platinum</h5>
+              <div class="price-box text-center text-white p-4">
+                <h5 class="price mb-2">$32.99</h5>
+                <p class="duration h5">Start Price/month</p>
+              </div>
+              <p class="h5 text-capitalize py-3">10 GB storage space</p><hr>
+              <p class="h5 text-capitalize py-2">50 GB bandwidth</p><hr>
+              <p class="h5 text-capitalize py-2">unlimited users</p><hr>
+              <p class="h5 text-capitalize py-2">no time tracking</p><hr>
+              <p class="h5 text-capitalize py-2">enhanced security</p><hr>
+              <a class="d-inline-block h5 font-weight-bold text-capitalize my-2 py-3 px-5" href="#">buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-sm-6 col-md-4 my-4 pb-2">
+          <div class="card silver">
+            <div class="card-body p-0 text-center">
+              <h5 class="text-uppercase text-center p-4">silver</h5>
+              <div class="price-box text-center text-white p-4">
+                <h5 class="price mb-2">$62.99</h5>
+                <p class="duration h5">Start Price/month</p>
+              </div>
+              <p class="h5 text-capitalize py-3">10 GB storage space</p><hr>
+              <p class="h5 text-capitalize py-2">50 GB bandwidth</p><hr>
+              <p class="h5 text-capitalize py-2">unlimited users</p><hr>
+              <p class="h5 text-capitalize py-2">no time tracking</p><hr>
+              <p class="h5 text-capitalize py-2">enhanced security</p><hr>
+              <a class="d-inline-block h5 font-weight-bold text-capitalize my-2 py-3 px-5" href="#">buy now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--./Pricing Content-->
+  <!-- Footer Area -->
+  <footer style="background:#eeeded;" class="footer-area">
+    <div class="footer-layer">
+      <div class="container mt-7">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center text-sm-left mb-3 mb-sm-0">
+            <h5 class="mb-2">Facebook Quick Links</h5>
+            <a class="d-block" href="#"><span class="fab fa-facebook-f mr-2 text-primary"></span>SoftTech-IT (Group)</a>
+            <a class="d-block" href="#"><span class="fab fa-facebook-f mr-2 text-primary"></span>SoftTech-IT Limited (Page)</a>
+            <a class="d-block" href="#"><span class="fab fa-facebook-f mr-2 text-primary"></span>SoftTech-IT Institute (page)</a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center text-sm-left">
+            <h5 class="mb-2">Other Quick Links</h5>
+            <a class="d-block" href="#"><span class="fab fa-youtube mr-2 text-danger"></span>youtube channel</a>
+            <a class="d-block" href="#"><span class="fab fa-twitter mr-2 text-info"></span>twitter</a>
+          </div>
+        </div>
+        <div class="row mt-3 text-center">
+          <h6 class="mx-auto mb-2">COPYRIGHT &copy;2017· SOFTTECH-IT - ALL RIGHTS ARE RESERVED</h6>
+        </div>
+      </div>
+    </div>
+  </footer><!--./Footer Area-->
+
+  <!-- Script Files -->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script> -->
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/jquery.newsTicker.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
+  <script src="assets/js/jquery-modal-video.min.js"></script>
+  <script src="assets/js/numscroller-1.0.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
