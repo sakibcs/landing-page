@@ -61,6 +61,9 @@ li{
 .f-17{
   font-size: 17px;
 }
+.f-16{
+  font-size: 16px;
+}
 .f-15{
   font-size: 15px;
 }
@@ -95,10 +98,10 @@ body{
 /*********************************
 ********** Header Area **********
 *********************************/
-.header-main .container{
+.home-header-main .container{
   position: relative;
 }
-.navigation-wrapper{
+.home-navigation-wrapper{
   position: absolute;
   top: 0;
   z-index: 9999;
@@ -123,6 +126,11 @@ body{
 }
 .primary-overlay{
   background: rgba(89,52,168,0.8);
+  background: linear-gradient(to bottom, rgba(165,76,235,0.9), rgba(82,44,164,0.9));
+}
+.default-overlay{
+  background: #522ca4;
+  background: linear-gradient(to bottom, #a54ceb, #522ca4);
 }
 .slider-container{
   padding-top: 100px;
@@ -224,7 +232,7 @@ body{
   height: 0;
   margin-left: -2000px;
   border-bottom: 150px solid #fff;
-  border-left: 2000px solid rgba(89,52,168,0.8);
+  border-left: 2000px solid rgba(82,44,164,0.9);
 }
 /**********************************
 ********** About Us Area **********

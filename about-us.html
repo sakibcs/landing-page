@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About Us</title>
+
+  <!-- Style Files -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/css/lightbox.min.css">
+  <link rel="stylesheet" href="assets/css/modal-video.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <style>
+    .member-photo-size{
+      position: relative;
+      display: block;
+      width: 120px;
+      height: 120px;
+      border: 3px solid transparent;
+      overflow: hidden;
+      transition: all .4s ease;
+      border-radius: 50%;
+    }
+    .member-1{
+      background: url('assets/img/sufyan.jpg') no-repeat scroll center center/105% 105%;
+    }
+    .member-2{
+      background: url('assets/img/sujon.jpg') no-repeat scroll center center/105% 105%;
+    }
+    .member-3{
+      background: url('assets/img/unknown.jpg') no-repeat scroll center center/200px 133px;
+    }
+    .member-photo-size .member-layer{
+      width: 100%;
+      height: 100%;
+      background: rgba(89,52,168,0.7);
+      transition: all .4s ease;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .member-photo-size:hover{
+      border: 3px solid #fff;
+      transform: scale(1.1, 1.1);
+      transition: all .4s ease;
+    }
+    .member-photo-size:hover .member-layer{
+      visibility: visible;
+      opacity: 1;
+    }
+    .member .fa-facebook-f:hover{
+      color: #4267B2;
+    }
+    .member .fa-twitter:hover{
+      color: #2CAAE0;
+    }
+    .member .fa-linkedin-in:hover{
+      color: #0077B5;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Area -->
+  <header class="header-area">
+    <div class="header-top">
+      <div class="container">
+        <div class="row py-2">
+          <div class="col-lg-6 text-center">
+            <h5 class="d-inline-block f-15">Recent Updates: </h5>
+            <ul style="margin-bottom:-5px;" id="newsticker" class="d-inline-block list-unstyled text-sm-left">
+              <li class="f-12 ml-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+              <li class="f-12 ml-1">Fugit ea exercitationem quam, est vipsum dolor sit amet elit.</li>
+              <li class="f-12 ml-1">Earum eaque maiores repellat ullam velit dolor amet elit.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 text-center text-lg-right">
+            <P class="email d-inline-block f-14 mr-3"><i class="fas fa-envelope c-primary mr-2"></i>softtech-it336@gmail.com</P>
+            <p class="telephone d-inline-block f-14"><i class="fas fa-phone c-primary mr-2"></i>+8801793146509 , +8801758101611</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="default-overlay">
+        <div class="container">
+          <div class="row navigation-wrapper w-100">
+            <div class="col-12">
+              <nav class="navigation-menu navbar navbar-expand-lg w-100">
+                <a href="index.html" class="navbar-brand">
+                  <img src="assets/img/logo.png" alt="SoftTech-IT" width="140" height="40">
+                </a>
+                <button class="navbar-toggler bg-white" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="fas fa-bars c-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item">
+                        <a href="index.html" class="nav-link text-uppercase f-17">home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="about-us.html" class="nav-link active text-uppercase f-17">about us</a>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="#courses" class="nav-link dropdown-toggle text-uppercase f-17" data-toggle="dropdown">our courses</a>
+                        <div class="dropdown-menu">
+                      		<a class="dropdown-item text-capitalize" href="#">web design</a>
+                      		<a class="dropdown-item text-capitalize" href="#">web development</a>
+                      		<a class="dropdown-item text-capitalize" href="#">WordPress development</a>
+                      	</div>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#seminar" class="nav-link text-uppercase f-17">free seminar</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#pricing" class="nav-link text-uppercase f-17">our pricing</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#blog" class="nav-link text-uppercase f-17">blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="page-title text-center text-white py-4">
+            <h3 class="text-uppercase">about us</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header><!--./Header Area-->
+  <!-- About Us -->
+  <section style="background:#eeeded;" class="about-us">
+    <div class="container">
+      <div class="text-content col-11 mb-5">
+        <h3 class="text-capitalize pt-5 mb-3">about us</h3>
+        <p class="f-14 l-sp-05 text-justify mb-5">Soft Tech IT Institute Soft Tech is a body of IT organization. Our main objective is to build the largest freelance community in Uttara. After learning all our courses for four months and 3 months of work, the students were expertly trained by doing one month's practical work. It is not our duty to take courses only. How to get work after the end of the course and how to communicate with clients is shown and all help is done.</p>
+        <h3 class="text-capitalize mb-3">main purpose</h3>
+        <p class="f-14 l-sp-05 text-justify">We have already mentioned in Uttara that we are going to build the largest freelancers community and it is our main objective to develop each student as a successful freelancer, because only developing skill or trying to freelance without skill development. Before the skill will be developed, then you will have to gain experience by doing professional work. After getting experienced, we should get down to work. When our students become experienced, we show them bidding work and help them all so that they can successfully take the freelancing profession as their career.</p>
+      </div>
+      <div class="members col-12">
+        <h3 class="text-capitalize text-center mb-5">our team</h3>
+        <div class="row chief-member justify-content-center text-center mb-5">
+          <div class="member col-6 col-lg-3">
+            <div class="member-photo-size member-1 mx-auto mb-3">
+              <div class="member-layer d-flex justify-content-center align-items-center">
+                <div class="member-social">
+                  <a class="text-white mx-1" href="#"><span class="fab fa-facebook-f"></span></a>
+                  <a class="text-white mx-1" href="#"><span class="fab fa-twitter"></span></a>
+                  <a class="text-white mx-1" href="#"><span class="fab fa-linkedin-in"></span></a>
+                </div>
+              </div>
+            </div>
+            <h6 class="mb-1">Md. Sanaul Mawla Sufyan</h6>
+            <p class="text-capitalize f-14">chief executive</p>
+          </div>
+          <div class="member col-6 col-lg-3">
+            <div class="member-photo-size member-2 mx-auto mb-3">
+              <div class="member-layer d-flex justify-content-center align-items-center">
+                <div class="member-social">
+                  <a class="text-white mx-1" href="#"><span class="fab fa-facebook-f"></span></a>
+                  <a class="text-white mx-1" href="#"><span class="fab fa-twitter"></span></a>
+                  <a class="text-white mx-1" href="#"><span class="fab fa-linkedin-in"></span></a>
+                </div>
+              </div>
+            </div>
+            <h6 class="mb-1">Md. Tariqul Mawla Sujon</h6>
+            <p class="text-capitalize f-14">chief executive</p>
+          </div>
+        </div>
+        <div class="row other-member justify-content-center text-center pb-5">
+          <div class="member col-sm-6 col-md-3 mb-5">
+            <div class="member-photo-size member-3 mx-auto mb-3">
+              <div class="member-layer d-flex justify-content-center align-items-center">
+                <div class="member-social">
+                  <a class="text-white mx-1" href="#"><span class="fab fa-facebook-f"></span></a>
+                  <a class="text-white mx-1" href="#"><span class="fab fa-twitter"></span></a>
+                  <a class="text-white mx-1" href="#"><span class="fab fa-linkedin-in"></span></a>
+                </div>
+              </div>
+            </div>
+            <h6 class="mb-1">Ashraful Haque</h6>
+            <p class="text-capitalize f-14">teacher</p>
+          </div>
+          <div class="member col-sm-6 col-md-3 mb-5">
+            <div class="member-photo-size member-3 mx-auto mb-3">
+              <div class="member-layer d-flex justify-content-center align-items-center">
+                <div class="member-social">
+                  <a class="text-white mx-1" href="#"><span class="fab fa-facebook-f"></span></a>
+                  <a class="text-white mx-1" href="#"><span class="fab fa-twitter"></span></a>
+                  <a class="text-white mx-1" href="#"><span class="fab fa-linkedin-in"></span></a>
+                </div>
+              </div>
+            </div>
+            <h6 class="mb-1">Iftekhar Mahmud</h6>
+            <p class="text-capitalize f-14">teacher</p>
+          </div>
+          <div class="member col-sm-6 col-md-3 mb-5">
+            <div class="member-photo-size member-3 mx-auto mb-3">
+              <div class="member-layer d-flex justify-content-center align-items-center">
+                <div class="member-social">
+                  <a class="text-white mx-1" href="#"><span class="fab fa-facebook-f"></span></a>
+                  <a class="text-white mx-1" href="#"><span class="fab fa-twitter"></span></a>
+                  <a class="text-white mx-1" href="#"><span class="fab fa-linkedin-in"></span></a>
+                </div>
+              </div>
+            </div>
+            <h6 class="mb-1">Abdullah Al Mamun</h6>
+            <p class="text-capitalize f-14">teacher</p>
+          </div>
+          <div class="member col-sm-6 col-md-3 mb-5">
+            <div class="member-photo-size member-3 mx-auto mb-3">
+              <div class="member-layer d-flex justify-content-center align-items-center">
+                <div class="member-social">
+                  <a class="text-white mx-1" href="#"><span class="fab fa-facebook-f"></span></a>
+                  <a class="text-white mx-1" href="#"><span class="fab fa-twitter"></span></a>
+                  <a class="text-white mx-1" href="#"><span class="fab fa-linkedin-in"></span></a>
+                </div>
+              </div>
+            </div>
+            <h6 class="mb-1">Moshiur Rahman</h6>
+            <p class="text-capitalize f-14">teacher</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--./About Us-->
+  <!-- Footer Area -->
+  <footer style="background:#eeeded;" class="footer-area">
+    <div class="footer-layer">
+      <div class="container mt-7">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center text-sm-left mb-3 mb-sm-0">
+            <h5 class="mb-2">Facebook Quick Links</h5>
+            <a class="d-block" href="#"><span class="fab fa-facebook-f mr-2 text-primary"></span>SoftTech-IT (Group)</a>
+            <a class="d-block" href="#"><span class="fab fa-facebook-f mr-2 text-primary"></span>SoftTech-IT Limited (Page)</a>
+            <a class="d-block" href="#"><span class="fab fa-facebook-f mr-2 text-primary"></span>SoftTech-IT Institute (page)</a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center text-sm-left">
+            <h5 class="mb-2">Other Quick Links</h5>
+            <a class="d-block" href="#"><span class="fab fa-youtube mr-2 text-danger"></span>youtube channel</a>
+            <a class="d-block" href="#"><span class="fab fa-twitter mr-2 text-info"></span>twitter</a>
+          </div>
+        </div>
+        <div class="row mt-3 text-center">
+          <h6 class="mx-auto mb-2">COPYRIGHT &copy;2017· SOFTTECH-IT - ALL RIGHTS ARE RESERVED</h6>
+        </div>
+      </div>
+    </div>
+  </footer><!--./Footer Area-->
+
+  <!-- Script Files -->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script> -->
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/jquery.newsTicker.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
+  <script src="assets/js/jquery-modal-video.min.js"></script>
+  <script src="assets/js/numscroller-1.0.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
