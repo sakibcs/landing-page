@@ -4,25 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Seminars | SoftTech-IT</title>
+  <title>Video Gallery | SoftTech-IT</title>
 
   <!-- Style Files -->
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/css/flaticon.css">
   <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/css/lightbox.min.css">
+  <link rel="stylesheet" href="assets/css/modal-video.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   <style>
-    .lightbox{
-      cursor: zoom-in;
+    .video-gallery .video .layer-2{
+      padding: 10px;
+      border-radius: 50%;
+      background: rgba(87,46,168,0.7);
+    }
+    .video-gallery .video .layer-1{
+      padding: 10px;
+      border-radius: 50%;
+      background: rgba(87,46,168,0.8);
+    }
+    .video-gallery .video .fas{
+      padding: 20px 20px 20px 25px;
+      border-radius: 50%;
+      background: rgba(87,46,168,1);
+    }
+    .video-gallery .video a{
+      transition: all .1s ease;
+    }
+    .video-gallery .video a:hover{
+      transform: scale(1.1,1.1);
+      transition: all .1s ease;
+    }
+    .video-1{
+      background: url('assets/img/pg-1.jpg') no-repeat scroll center center/ 100% 100%;
+    }
+    .video-gallery .video-overlay{
+      width: 100%;
+      height: 100%;
+      background: rgba(165,76,235,0.8);
     }
     .page-item.active .page-link {
-      background-color: rgba(82,44,164,1);
-      border-color: rgba(82,44,164,1);
+    	background-color: rgba(82,44,164,1);
+    	border-color: rgba(82,44,164,1);
     }
     .page-link {
-      color: rgba(82,44,164,1);
+    	color: rgba(82,44,164,1);
     }
   </style>
 </head>
@@ -75,7 +107,7 @@
                       	</div>
                     </li>
                     <li class="navbar-item">
-                        <a href="seminars.html" class="nav-link active text-uppercase f-17">free seminar</a>
+                        <a href="seminars.html" class="nav-link text-uppercase f-17">free seminar</a>
                     </li>
                     <li class="navbar-item">
                         <a href="pricing.html" class="nav-link text-uppercase f-17">our pricing</a>
@@ -89,7 +121,7 @@
             </div>
           </div>
           <div class="page-title text-center text-white py-4">
-            <h3 class="text-uppercase">seminars</h3>
+            <h3 class="text-capitalize">video</h3>
           </div>
         </div>
       </div>
@@ -101,62 +133,99 @@
       <div class="row">
         <div class="col-12 my-4">
           <div style="background:#f6f6f6;" class="card">
-            <div class="card-body tz-gallery">
-              <div class="row">
-                <div class="col-md-4 p-2">
-                  <a class="lightbox" href="assets/img/seminar-1.jpg">
-                      <img class="img-fluid" src="assets/img/seminar-1.jpg" alt="Bridge">
-                  </a>
-                </div>
-                <div class="col-md-4 p-2">
-                  <a class="lightbox" href="assets/img/seminar-2.jpg">
-                      <img class="img-fluid" src="assets/img/seminar-2.jpg" alt="Park">
-                  </a>
-                </div>
-                <div class="col-md-4 p-2">
-                  <a class="lightbox" href="assets/img/seminar-3.jpg">
-                      <img class="img-fluid" src="assets/img/seminar-3.jpg" alt="Tunnel">
-                  </a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12 col-md-8 p-2">
-                    <a class="lightbox" href="assets/img/seminar-4.jpg">
-                        <img class="img-fluid" src="assets/img/seminar-4.jpg" alt="Traffic">
+            <div class="card-body row">
+              <div class="col-sm-6 col-md-4 my-4">
+                <div class="video video-1 text-center align-self-center">
+                  <div class="video-overlay">
+                    <a class="js-modal-btn text-dark d-inline-block m-5" href="#" data-video-id="mqI_zGsM5Jc">
+                      <span class="layer-2 rounded-circle d-inline-block">
+                        <span class="layer-1 rounded-circle d-inline-block">
+                          <i class="fas fa-play f-22 text-white"></i>
+                        </span>
+                      </span>
                     </a>
-                </div>
-                <div class="col-sm-12 col-md-4 d-flex flex-column align-content-between p-0">
-                  <div class="px-2 pt-2 pb-1">
-                      <a class="lightbox" href="assets/img/seminar-5.jpg">
-                          <img class="img-fluid" src="assets/img/seminar-5.jpg" alt="Coast">
-                      </a>
-                  </div>
-                  <div class="px-2 pt-1 pb-2">
-                      <a class="lightbox" href="assets/img/seminar-6.jpg">
-                          <img class="img-fluid" src="assets/img/seminar-6.jpg" alt="Rails">
-                      </a>
                   </div>
                 </div>
+                <h5 class="text-capitalize mt-2 mb-1">video title</h5>
+                <p class="f-14 text-capitalize">03-03-2000</p>
               </div>
-              <div class="row">
-                <div class="col-md-4 p-2">
-                  <a class="lightbox" href="assets/img/seminar-1.jpg">
-                      <img class="img-fluid" src="assets/img/seminar-1.jpg" alt="Bridge">
-                  </a>
+              <div class="col-sm-6 col-md-4 my-4">
+                <div class="video video-1 text-center align-self-center">
+                  <div class="video-overlay">
+                    <a class="js-modal-btn text-dark d-inline-block m-5" href="#" data-video-id="mqI_zGsM5Jc">
+                      <span class="layer-2 rounded-circle d-inline-block">
+                        <span class="layer-1 rounded-circle d-inline-block">
+                          <i class="fas fa-play f-22 text-white"></i>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
                 </div>
-                <div class="col-md-4 p-2">
-                  <a class="lightbox" href="assets/img/seminar-2.jpg">
-                      <img class="img-fluid" src="assets/img/seminar-2.jpg" alt="Park">
-                  </a>
-                </div>
-                <div class="col-md-4 p-2">
-                  <a class="lightbox" href="assets/img/seminar-3.jpg">
-                      <img class="img-fluid" src="assets/img/seminar-3.jpg" alt="Tunnel">
-                  </a>
-                </div>
+                <h5 class="text-capitalize mt-2 mb-1">video title</h5>
+                <p class="f-14 text-capitalize">03-03-2000</p>
               </div>
-              <nav class="mt-5" aria-label="pagination">
-                <ul class="pagination justify-content-center">
+              <div class="col-sm-6 col-md-4 my-4">
+                <div class="video video-1 text-center align-self-center">
+                  <div class="video-overlay">
+                    <a class="js-modal-btn text-dark d-inline-block m-5" href="#" data-video-id="mqI_zGsM5Jc">
+                      <span class="layer-2 rounded-circle d-inline-block">
+                        <span class="layer-1 rounded-circle d-inline-block">
+                          <i class="fas fa-play f-22 text-white"></i>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <h5 class="text-capitalize mt-2 mb-1">video title</h5>
+                <p class="f-14 text-capitalize">03-03-2000</p>
+              </div>
+              <div class="col-sm-6 col-md-4 my-4">
+                <div class="video video-1 text-center align-self-center">
+                  <div class="video-overlay">
+                    <a class="js-modal-btn text-dark d-inline-block m-5" href="#" data-video-id="mqI_zGsM5Jc">
+                      <span class="layer-2 rounded-circle d-inline-block">
+                        <span class="layer-1 rounded-circle d-inline-block">
+                          <i class="fas fa-play f-22 text-white"></i>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <h5 class="text-capitalize mt-2 mb-1">video title</h5>
+                <p class="f-14 text-capitalize">03-03-2000</p>
+              </div>
+              <div class="col-sm-6 col-md-4 my-4">
+                <div class="video video-1 text-center align-self-center">
+                  <div class="video-overlay">
+                    <a class="js-modal-btn text-dark d-inline-block m-5" href="#" data-video-id="mqI_zGsM5Jc">
+                      <span class="layer-2 rounded-circle d-inline-block">
+                        <span class="layer-1 rounded-circle d-inline-block">
+                          <i class="fas fa-play f-22 text-white"></i>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <h5 class="text-capitalize mt-2 mb-1">video title</h5>
+                <p class="f-14 text-capitalize">03-03-2000</p>
+              </div>
+              <div class="col-sm-6 col-md-4 my-4">
+                <div class="video video-1 text-center align-self-center">
+                  <div class="video-overlay">
+                    <a class="js-modal-btn text-dark d-inline-block m-5" href="#" data-video-id="mqI_zGsM5Jc">
+                      <span class="layer-2 rounded-circle d-inline-block">
+                        <span class="layer-1 rounded-circle d-inline-block">
+                          <i class="fas fa-play f-22 text-white"></i>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <h5 class="text-capitalize mt-2 mb-1">video title</h5>
+                <p class="f-14 text-capitalize">03-03-2000</p>
+              </div>
+              <nav class="mt-5 mx-auto" aria-label="pagination">
+                <ul class="pagination">
                   <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
                   <li class="page-item active"><a class="page-link" href="#">1</a></li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -197,15 +266,16 @@
   </footer><!--./Footer Area-->
 
   <!-- Script Files -->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script> -->
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/lightbox-plus-jquery.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
   <script src="assets/js/jquery.newsTicker.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
+  <script src="assets/js/jquery-modal-video.min.js"></script>
+  <script src="assets/js/numscroller-1.0.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script>
-    baguetteBox.run('.tz-gallery');
-  </script>
 </body>
 </html>
