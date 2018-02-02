@@ -356,6 +356,9 @@ body{
 .contact form textarea{
   background: #eeeded;
 }
+.contact form textarea:focus{
+  background: #eeeded;
+}
 .contact input[type=submit]{
   color: #fff;
   background: #6e40d1;

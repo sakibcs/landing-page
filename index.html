@@ -374,7 +374,7 @@
         <h3 class="d-block text-center text-capitalize mt-5">student review</h3>
       </div>
       <div class="slider-wrapper">
-        <div id="counterSlider" class="slider">
+        <div id="testimonialSlider" class="slider">
 	        <div class="slide text-center">
             <div class="reviewer-photo mx-auto mb-3"></div>
             <h5 class="text-capitalize l-sp-05">istiak remon</h5>
@@ -451,15 +451,11 @@
                 <input type="text" class="form-control" placeholder="Subject">
               </div>
             </div>
-            <div class="form-row">
-              <div class="col-lg m-1">
-                <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Your Message..."></textarea>
-              </div>
+            <div class="form-group m-1">
+              <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Your Message..."></textarea>
             </div>
-            <div class="form-row">
-              <div class="col-lg m-1">
-                <input type="submit" class="btn btn-block" value="Submit Now">
-              </div>
+            <div class="form-group m-1 mt-2">
+              <input type="submit" class="btn btn-block" value="Submit Now">
             </div>
           </form>
         </div>
@@ -491,7 +487,6 @@
   </footer><!--./Footer Area-->
 
   <!-- Script Files -->
-  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script> -->
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
@@ -502,5 +497,48 @@
   <script src="assets/js/jquery-modal-video.min.js"></script>
   <script src="assets/js/numscroller-1.0.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script>
+    $("#homeSlider").slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 1500,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      draggable: false,
+      pauseOnHover: false,
+      arrows: true,
+      prevArrow: '<i class="arrows fas fa-caret-left fa-2x"></i>',
+      nextArrow: '<i class="arrows fas fa-caret-right fa-2x"></i>',
+      fade: true,
+      cssEase: 'linear'
+    });
+    $("#testimonialSlider").slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 500,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      draggable: false,
+      pauseOnHover: true,
+      responsive: [
+              {
+          breakpoint: 575,
+          settings: {
+            arrows: false,
+            dots: true
+          }
+        }
+      ]
+    });
+    $("#tabs").tabs();
+  	$(".js-modal-btn").modalVideo({
+  		youtube:{
+  				controls:1,
+  				autoplay: 1,
+  			}
+  	});
+  </script>
 </body>
 </html>
